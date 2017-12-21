@@ -1,0 +1,68 @@
+body{
+    background-image: url('sky.jpeg');
+    background-repeat: no-repeat;    
+    background-size: cover;
+    
+}
+
+#box{
+    position: absolute;
+    width: 700px;
+    height: 500px;
+    background-image: url('spaceship.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 30%;
+    top: 30%;
+/*    background: linear-gradient(red, yellow);*/
+/*    animation: move-around 3s 7;*/
+}
+
+#result{
+    position: relative;
+    width: 200px;
+    height: 50px;
+    top: 50%;
+    left: 40%;
+    background: linear-gradient(blue, yellow);
+    font-size: 20px;
+    border-radius: 20px;
+    display: none;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#box2{
+    position: absolute;
+    left: 400px;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(white, green);
+    border-radius: 50%;
+    animation: move-around 6s infinite;
+}
+
+@keyframes move-around{
+    0%{
+        top: 0px;
+    }
+    20%{
+        left: 100px;
+    }
+    60%{
+        left: -60px;
+    }
+    80%{
+        left: 70px;
+    }
+    100%{
+        top: 300px;
+    }
+}
+
+/*
+      Left = 37
+      Up = 38
+      Right = 39
+      Down = 40
+*/
